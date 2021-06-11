@@ -7,12 +7,16 @@ namespace ServerCore
     class Program
     {
         static int number = 0;
+        static object _obj = new object();
 
         static void Thread_1()
         {
             for (int i = 0; i < 100000; i++)
             {
-                Interlocked.Increment(ref number);
+                lock(_obj)
+                {
+                    number++;
+                }
             }
                 
         }
@@ -21,7 +25,10 @@ namespace ServerCore
         {
             for (int i = 0; i < 100000; i++)
             {
-                Interlocked.Decrement(ref number);
+                lock (_obj)
+                {
+                    number--;
+                }
             }
         }
 
