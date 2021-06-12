@@ -1,0 +1,16 @@
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\Server.exe
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\Server.deps.json
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.json
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\Server.dll
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\Server.pdb
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\ServerCore.dll
+D:\vs2019_C#_part4\Server\Server\bin\Debug\netcoreapp3.1\ServerCore.pdb
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.csprojAssemblyReference.cache
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.csproj.CoreCompileInputs.cache
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.csproj.CopyComplete
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.dll
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.pdb
+D:\vs2019_C#_part4\Server\Server\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache

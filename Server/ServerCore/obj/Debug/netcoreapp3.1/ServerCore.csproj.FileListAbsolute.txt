@@ -1,7 +1,4 @@
-D:\vs2019_C#_part4\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.exe
 D:\vs2019_C#_part4\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.deps.json
-D:\vs2019_C#_part4\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.runtimeconfig.json
-D:\vs2019_C#_part4\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.runtimeconfig.dev.json
 D:\vs2019_C#_part4\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.dll
 D:\vs2019_C#_part4\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.pdb
 D:\vs2019_C#_part4\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csprojAssemblyReference.cache
@@ -10,4 +7,3 @@ D:\vs2019_C#_part4\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.Assembly
 D:\vs2019_C#_part4\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csproj.CoreCompileInputs.cache
 D:\vs2019_C#_part4\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.dll
 D:\vs2019_C#_part4\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.pdb
-D:\vs2019_C#_part4\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.genruntimeconfig.cache
