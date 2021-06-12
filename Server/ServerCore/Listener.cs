@@ -10,10 +10,11 @@ namespace ServerCore
     {
         Socket _listenSocket;
         Action<Socket> _onAcceptHandler;
+
         public void Init(IPEndPoint endPoint, Action<Socket> onAcceptHandler)
         {
             _listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            _onAcceptHandler = onAcceptHandler;
+            _onAcceptHandler += onAcceptHandler;
 
             _listenSocket.Bind(endPoint);
 
@@ -32,10 +33,9 @@ namespace ServerCore
             bool pending = _listenSocket.AcceptAsync(args);
             if (pending == false)
                 OnAcceptCompleted(null, args);
-
         }
 
-        void OnAcceptCompleted(object sender , SocketAsyncEventArgs args)
+        void OnAcceptCompleted(object sender, SocketAsyncEventArgs args)
         {
             if (args.SocketError == SocketError.Success)
             {
@@ -45,11 +45,6 @@ namespace ServerCore
                 Console.WriteLine(args.SocketError.ToString());
 
             RegisterAccept(args);
-        }
-
-        public Socket Accept()
-        {
-            return _listenSocket.Accept();
         }
     }
 }
