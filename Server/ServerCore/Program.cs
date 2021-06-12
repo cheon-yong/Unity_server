@@ -11,6 +11,27 @@ namespace ServerCore
     {
         static Listener _listener = new Listener();
 
+        static void OnAcceptHandler(Socket clientSocket)
+        {
+            try
+            {
+                byte[] recvBuff = new byte[1024];
+                int recvBytes = clientSocket.Receive(recvBuff);
+                string recvData = Encoding.UTF8.GetString(recvBuff, 0, recvBytes);
+                Console.WriteLine($"[From Client] {recvData}");
+
+                byte[] sendBuff = Encoding.UTF8.GetBytes("Welcome to MMORPG Server !");
+                clientSocket.Send(sendBuff);
+
+                clientSocket.Shutdown(SocketShutdown.Both);
+                clientSocket.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
         static void Main(string[] args)
         {
             // DNS 
@@ -19,35 +40,12 @@ namespace ServerCore
             IPAddress ipAddr = ipHost.AddressList[0];
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777);
 
+            _listener.Init(endPoint, OnAcceptHandler);
+            Console.WriteLine("Listening...");
 
-            try
+            while (true)
             {
-                _listener.Init(endPoint);
 
-                while (true)
-                {
-                    Console.WriteLine("Listening...");
-
-                    //
-                    Socket clientSocket = _listener.Accept();
-
-                    byte[] recvBuff = new byte[1024];
-                    int recvBytes = clientSocket.Receive(recvBuff);
-                    string recvData = Encoding.UTF8.GetString(recvBuff, 0, recvBytes);
-                    Console.WriteLine($"[From Client] {recvData}");
-
-                    byte[] sendBuff = Encoding.UTF8.GetBytes("Welcome to MMORPG Server !");
-                    clientSocket.Send(sendBuff);
-
-                    clientSocket.Shutdown(SocketShutdown.Both);
-                    clientSocket.Close();
-
-
-                }
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.ToString());
             }
         }
     }

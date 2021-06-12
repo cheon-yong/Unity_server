@@ -9,11 +9,12 @@ namespace ServerCore
     class Listener
     {
         Socket _listenSocket;
-
-        public void Init(IPEndPoint endPoint)
+        Action<Socket> _onAcceptHandler;
+        public void Init(IPEndPoint endPoint, Action<Socket> onAcceptHandler)
         {
             _listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            
+            _onAcceptHandler = onAcceptHandler;
+
             _listenSocket.Bind(endPoint);
 
             // backlog : 최대 대기수
@@ -26,6 +27,8 @@ namespace ServerCore
 
         void RegisterAccept(SocketAsyncEventArgs args)
         {
+            args.AcceptSocket = null;
+
             bool pending = _listenSocket.AcceptAsync(args);
             if (pending == false)
                 OnAcceptCompleted(null, args);
@@ -33,14 +36,19 @@ namespace ServerCore
         }
 
         void OnAcceptCompleted(object sender , SocketAsyncEventArgs args)
-
         {
+            if (args.SocketError == SocketError.Success)
+            {
+                _onAcceptHandler.Invoke(args.AcceptSocket);
+            }
+            else
+                Console.WriteLine(args.SocketError.ToString());
 
+            RegisterAccept(args);
         }
 
         public Socket Accept()
         {
-            _listenSocket.AcceptAsync();
             return _listenSocket.Accept();
         }
     }
