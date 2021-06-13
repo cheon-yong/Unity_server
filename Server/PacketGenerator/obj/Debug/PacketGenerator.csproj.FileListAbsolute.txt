@@ -1,0 +1,12 @@
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\PacketGenerator.exe
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\PacketGenerator.deps.json
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\PacketGenerator.runtimeconfig.json
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\PacketGenerator.runtimeconfig.dev.json
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\PacketGenerator.dll
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\PacketGenerator.pdb
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.AssemblyInfoInputs.cache
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.AssemblyInfo.cs
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.csproj.CoreCompileInputs.cache
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.dll
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.pdb
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.genruntimeconfig.cache
