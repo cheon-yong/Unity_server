@@ -1,0 +1,13 @@
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\Debug\netcoreapp3.1\PacketGenerator.exe
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\Debug\netcoreapp3.1\PacketGenerator.deps.json
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\Debug\netcoreapp3.1\PacketGenerator.runtimeconfig.json
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\Debug\netcoreapp3.1\PacketGenerator.runtimeconfig.dev.json
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\Debug\netcoreapp3.1\PacketGenerator.dll
+D:\vs2019_C#_part4\Server\PacketGenerator\bin\Debug\netcoreapp3.1\PacketGenerator.pdb
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.csprojAssemblyReference.cache
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.AssemblyInfoInputs.cache
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.AssemblyInfo.cs
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.csproj.CoreCompileInputs.cache
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.dll
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.pdb
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\netcoreapp3.1\PacketGenerator.genruntimeconfig.cache
