@@ -4,13 +4,13 @@ D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.runtim
 D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.runtimeconfig.dev.json
 D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.dll
 D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.pdb
+D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\ServerCore.dll
+D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\ServerCore.pdb
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csprojAssemblyReference.cache
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.AssemblyInfoInputs.cache
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.AssemblyInfo.cs
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csproj.CoreCompileInputs.cache
+D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csproj.CopyComplete
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.dll
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.pdb
 D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.genruntimeconfig.cache
-D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\ServerCore.dll
-D:\vs2019_C#_part4\Server\DummyClient\bin\Debug\netcoreapp3.1\ServerCore.pdb
-D:\vs2019_C#_part4\Server\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csproj.CopyComplete
