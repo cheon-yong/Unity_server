@@ -6,14 +6,22 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-public enum PacketId
+public enum PacketID
 {
     PlayerInfoReq = 1,
 	Test = 2,
 	
 }
 
-class PlayerInfoReq
+interface IPacket
+{
+	ushort Protocol { get; }
+	void Read(ArraySegment<byte> segment);
+	ArraySegment<byte> Write();
+}
+
+
+class PlayerInfoReq : IPacket
 {
     public byte testByte;
 	public long playerId;
@@ -82,6 +90,8 @@ class PlayerInfoReq
 	
 	public List<Skill> skills = new List<Skill>();
 
+    public ushort Protocol { get { return (ushort)PacketId.PlayerInfoReq; } }
+
     public void Read(ArraySegment<byte> segment)
     {
         ushort count = 0;
@@ -139,9 +149,11 @@ class PlayerInfoReq
     }
 }
 
-class Test
+class Test : IPacket
 {
     public int testInt;
+
+    public ushort Protocol { get { return (ushort)PacketId.Test; } }
 
     public void Read(ArraySegment<byte> segment)
     {
@@ -174,3 +186,4 @@ class Test
         return SendBufferHelper.Close(count);
     }
 }
+

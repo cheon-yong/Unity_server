@@ -17,11 +17,20 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-public enum PacketId
+public enum PacketID
 {{
     {0}
 }}
-{1}";
+
+interface IPacket
+{{
+	ushort Protocol {{ get; }}
+	void Read(ArraySegment<byte> segment);
+	ArraySegment<byte> Write();
+}}
+
+{1}
+";
 
         // {0} 패킷 이름
         // {1} 패킷 번호
@@ -34,9 +43,11 @@ public enum PacketId
         // {3} 멤버 변수 Write
         public static string packetFormat =
 @"
-class {0}
+class {0} : IPacket
 {{
     {1}
+
+    public ushort Protocol {{ get {{ return (ushort)PacketID.{0}; }} }}
 
     public void Read(ArraySegment<byte> segment)
     {{
@@ -57,7 +68,7 @@ class {0}
         Span<byte> s = new Span<byte>(segment.Array, segment.Offset, segment.Count);
 
         count += sizeof(ushort);
-        success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), (ushort)PacketId.{0});
+        success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), (ushort)PacketID.{0});
         count += sizeof(ushort);
         {3}
         success &= BitConverter.TryWriteBytes(s, count);
