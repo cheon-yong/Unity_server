@@ -21,7 +21,7 @@ namespace Server
 
                 ClientSession session = new ClientSession();
                 session.SessionId = sessionId;
-                _session.Add(sessionId, session);
+                _sessions.Add(sessionId, session);
 
                 Console.WriteLine($"Connected : {sessionId}");
 

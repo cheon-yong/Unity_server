@@ -10,3 +10,4 @@ D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.csproj.CoreC
 D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.dll
 D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.pdb
 D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.genruntimeconfig.cache
+D:\vs2019_C#_part4\Server\PacketGenerator\obj\Debug\PacketGenerator.csprojAssemblyReference.cache

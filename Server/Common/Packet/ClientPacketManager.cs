@@ -5,17 +5,14 @@ using System.Collections.Generic;
 class PacketManager
 {
     #region Singleton
-    static PacketManager _instacne;
-    public static PacketManager Instance 
-    {
-        get
-        {
-            if (_instacne == null)
-                _instacne = new PacketManager();
-            return _instacne;
-        }
-    }
+    static PacketManager _instacne = new PacketManager();
+    public static PacketManager Instance { get { return _instacne; } }
     #endregion
+
+    PacketManager()
+    {
+        Register();
+    }
 
     Dictionary<ushort, Action<PacketSession, ArraySegment<byte>>> _onRecv = new Dictionary<ushort, Action<PacketSession, ArraySegment<byte>>>();
     Dictionary<ushort, Action<PacketSession, IPacket>> _handler = new Dictionary<ushort, Action<PacketSession, IPacket>>();
