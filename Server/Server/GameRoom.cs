@@ -74,8 +74,8 @@ namespace Server
         {
             // 좌표 변경
             session.PosX = packet.posX;
-            session.PosX = packet.posX;
-            session.PosX = packet.posX;
+            session.PosY = packet.posY;
+            session.PosZ = packet.posZ;
 
             // 모두에게 전송
             S_BroadcastMove move = new S_BroadcastMove();
